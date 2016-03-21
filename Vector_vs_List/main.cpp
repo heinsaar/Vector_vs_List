@@ -60,8 +60,9 @@ int main()
 
     std::cout << "When N = " << N << "\n\n";
 
-    auto v_grow   = grow(vector);
-    auto v_shrink = shrink(vector);
+    auto v_grow   = grow(vector);   // milliseconds to grow
+    auto v_shrink = shrink(vector); // milliseconds to shrink
+    
     std::cout << "Vector:\n";
     std::cout << "    Insertion: " << std::setw(7) << v_grow              << std::setfill(' ') << " ms\n";
     std::cout << "    Deletion:  " << std::setw(7) << v_shrink            << std::setfill(' ') << " ms\n";
