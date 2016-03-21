@@ -60,9 +60,8 @@ int main()
 
     std::cout << "When N = " << N << "\n\n";
 
-    auto v_grow   = grow(vector);   // milliseconds to grow
-    auto v_shrink = shrink(vector); // milliseconds to shrink
-    
+    auto v_grow   = grow(vector);   // time to grow
+    auto v_shrink = shrink(vector); // time to shrink
     std::cout << "Vector:\n";
     std::cout << "    Insertion: " << std::setw(7) << v_grow              << std::setfill(' ') << " ms\n";
     std::cout << "    Deletion:  " << std::setw(7) << v_shrink            << std::setfill(' ') << " ms\n";
@@ -70,8 +69,8 @@ int main()
 
     std::cout << "\n\n-------------------------\n\n";
 
-    auto l_grow   = grow(list);
-    auto l_shrink = shrink(list);
+    auto l_grow   = grow(list);     // time to grow
+    auto l_shrink = shrink(list);   // time to shrink
     std::cout << "List:\n";
     std::cout << "    Insertion: " << std::setw(7) << l_grow              << std::setfill(' ') << " ms\n";
     std::cout << "    Deletion:  " << std::setw(7) << l_shrink            << std::setfill(' ') << " ms\n";
