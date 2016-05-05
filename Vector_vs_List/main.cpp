@@ -45,7 +45,8 @@ auto shrink(Container& c)
     for (int i = 0; i < N; ++i)
     {
         auto pos = c.begin();
-        std::advance(pos, random(c.size() - 1));
+        auto r = random(c.size() - 1);
+        while (r--) ++pos;
         c.erase(pos);
     }
 
