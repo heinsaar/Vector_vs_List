@@ -35,7 +35,7 @@ auto grow(Container& c)
 
     auto end = std::chrono::system_clock::now();
     return std::chrono::duration_cast<ms>(end - start).count();
-}
+} 
 
 template<class Container>
 auto shrink(Container& c)
